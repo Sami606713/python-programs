@@ -1,0 +1,22 @@
+#Take an input
+age_year=int(input("enter"))
+#check condition
+if(age_year<=100):
+	print(" you enter age")
+
+	print("you have 2 choice y for yes and q for quit\n")
+#Take another input
+	old=input("did you know how many year are need to become a 100 year\n")
+
+	if(old=='y'):
+		print("you need", 100-age_year, "year to become 100 year\n")
+		
+		print(age_year+27, "year is your age in 2050\n")
+	else:
+		print("quit")
+		
+elif(age_year>=1990 and age_year<=2023):
+	print("you enter year")
+	
+else:
+	print("unabel to find")
