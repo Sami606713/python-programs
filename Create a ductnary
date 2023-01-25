@@ -1,0 +1,13 @@
+# MAKE A DITCNARY:
+
+dicnary={"Data":"collection of fact and figure called data", "Information":"convert data into a meaningful form called information","A.I":"A.I stand for artifical intelegence", "ICT":"ICT stand for information communication technology"}
+
+# Take a  input
+print("search any thing first letter must be capital")
+for i in range(10):
+	
+	value=input("please enter a word did you search\n")
+
+	print(dicnary.get(value))
+
+
