@@ -1,0 +1,15 @@
+#Take a input
+num=int(input("enter a nbr"))
+#Enter a minimum nbr
+min_num=int(input("enter min nbr"))
+#enter a maximum nbr
+max_num=int(input("enter max nbr"))
+#Using loop
+for i in range(min_num, max_num):
+#check condition
+	if(num%i==0):
+		print(i, "is divisible")
+		
+	else:
+		print(i, "not divisible")
+	#print(i)
