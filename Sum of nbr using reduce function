@@ -1,0 +1,6 @@
+array=[1, 2, 3, 4, 5, 300]
+#now use function
+from functools import reduce
+#make fuction
+sum=reduce(lambda x, y:x+y, array)
+print("sum is =", sum)
