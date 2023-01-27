@@ -1,0 +1,15 @@
+sum=0
+print("Enter item prize and press T for total bill ")
+#1 using infinite loop
+while(True):
+#2 take input
+	user=input("enter item prize")
+#3 check condition
+	if(user!='T'):
+#4 update sum
+		sum=sum+int(user)
+		print("At that time your total prize is=", sum)
+	else:
+		print(f"your total prize is={sum}")
+		print(f"Thanks for using calculator")
+		break
