@@ -1,0 +1,35 @@
+#create a variables
+grade=[]
+c_hour=[]
+product=[]
+
+#take a input as a string
+sub=int(input("how many sub are"))
+#use for loop
+for i in range(sub+1):
+	g=input("Enter subject gpa")
+#use append function
+	grade.append(g)
+	
+	h=input("Enter subject c_hour")
+	c_hour.append(h)
+#convert string into float
+	total=float(g)*int(h)
+	product.append(total)
+
+print(f"your subs grade is={grade}")
+
+	
+#make a function
+from functools import reduce
+s=reduce(lambda x, y:x+y, product)
+
+#use map fynction
+c_h=list(map(int, c_hour))
+print(f"your c_hour is={c_h}")
+ho=reduce(lambda x, y:x+y,c_h)
+
+total_GPA=s/ho
+
+print(f"Your total GPA is ={total_GPA}") 	
+	
