@@ -1,0 +1,45 @@
+money=int(input("how much money in your account\n"))
+password=int(input("enter password\n"))
+
+if(password==2244):
+	print("welcome")
+	choice=int(input("Enter choice\n1)For Transation\n2)For quit\n "))
+	
+	if(choice==1):
+		withdraw=int(input("select op for withdraw\n1)20000\n2)10000\n3)50000\n4)other"))
+		
+	if(withdraw==4):
+		cash=int(input("Enter amount"))
+		if(cash<=money):
+			print("collect", cash)
+			print("new balance", money-cash)
+		else:
+			print("no enough balance")
+			
+	if(withdraw==1):
+		if(money>=20000):
+			print("collect 20000")
+			print("new balance is", money-20000)
+		else:
+			print("no enough balance")
+	
+	if(withdraw==2):
+		if(money>=10000):
+			print("collect 10000")
+			print("new balance is", money-10000)
+		else:
+			print("no enough balance")	
+		
+	if(withdraw==3):
+		if(money>=5000):
+			print("collect 5000")
+			print("new balance is", money-20000)
+		else:
+			print("no enough balance")	
+		
+					
+	else:
+		quit()
+	
+else:
+	print("enter correct password")
